@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Shivani-Jadon/Order_Dashboard#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
     "handlebars": "^4.7.6",
     "nodemon": "^2.0.4"
   }
