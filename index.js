@@ -12,10 +12,8 @@ app.engine('hbs', expressHandlebars({
 
 app.set('view engine', 'hbs');
 
-// request handler
-app.get('/', (req, res) => {
-    res.render('home');
-});
+//loading router
+app.use('/', require("./routes"));
 
 // listening to the server at port
 app.listen(port, function(err){
