@@ -4,11 +4,12 @@ const port = 8000;
 const expressHandlebars = require('express-handlebars');
 
 // configuring handlebar as our template engine
-app.engine('handlebars', expressHandlebars({
-    defaultLayout: 'main'
+app.engine('hbs', expressHandlebars({
+    defaultLayout: 'main',
+    extname : '.hbs'
 }));
 
-app.set('view engine', 'handlebars');
+app.set('view engine', 'hbs');
 
 // request handler
 app.get('/', (req, res) => {
