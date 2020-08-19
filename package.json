@@ -1,0 +1,28 @@
+{
+  "name": "order_dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard displaying order and user information using handlebar.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shivani-Jadon/Order_Dashboard.git"
+  },
+  "keywords": [
+    "dashboard",
+    "handlebars"
+  ],
+  "author": "Shivani Jadon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shivani-Jadon/Order_Dashboard/issues"
+  },
+  "homepage": "https://github.com/Shivani-Jadon/Order_Dashboard#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "nodemon": "^2.0.4"
+  }
+}
