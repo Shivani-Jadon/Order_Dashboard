@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = 8000;
 const expressHandlebars = require('express-handlebars');
+const Chart = require('chart.js');
 
 // configuring handlebar as our template engine
 app.engine('hbs', expressHandlebars({
