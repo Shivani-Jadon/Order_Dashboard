@@ -1,45 +1,48 @@
 
 <canvas id="myChart" width="400" height="400"></canvas>
 <script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ['1-07-2020','2-07-2020','3-07-2020','4-07-2020'],
-            datasets: [{
-                label: 'Order Amount',
-                data: [{
-                        x: 10,
-                        y: 20
-                    }, {
-                        x: 15,
-                        y: 10
-                    }],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    stacked: true
-                }]
-            }
+    window.onload = function(){
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const labels=[];
+        const data = [];
+        dummyData.sort( (a,b) => {
+            let parts = a.OrderDate.split('/');
+            const d1 = Number(parts[2] + parts[1] + parts[0]);
+            parts = b.OrderDate.split('/');
+            const d2 = Number(parts[2] + parts[1] + parts[0]);
+            console.log(d1 , d2);
+            return d1 - d2;
+        });
+        console.log("Sorted Array ", dummyData);
+        for (const iterator of dummyData) {
+                data.push({y:iterator.TotalAmount})
+                labels.push(iterator.OrderDate);
         }
-    });
+
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Order Amount',
+                    data: data,
+                    backgroundColor: [
+                        '#8bc34a9e',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        stacked: true
+                    }]
+                }
+            }
+        });
+    }   
+    
 </script>
