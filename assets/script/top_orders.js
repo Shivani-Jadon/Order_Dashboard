@@ -6,7 +6,7 @@
 
     // appending top 5 orders in the table
     for(let top=0; top<5; top++){
-        console.log(dummyData[top]);
+        // console.log(dummyData[top]);
         let table_index = $("<th></th>").text(`${top+1}`);
         let table_data1 = $("<td></td>").text(`${dummyData[top].OrderNo}`);
         let table_data2 = $("<td></td>").text(`${dummyData[top].TotalAmount}`);
@@ -19,7 +19,7 @@
 
     // appending bottom 5 orders in the table
     for(let bottom=dummyData.length-1; bottom>dummyData.length-6; bottom--){
-        console.log(dummyData[bottom]);
+        // console.log(dummyData[bottom]);
         let table_index = $("<th></th>").text(`${bottom+1}`);
         let table_data1 = $("<td></td>").text(`${dummyData[bottom].OrderNo}`);
         let table_data2 = $("<td></td>").text(`${dummyData[bottom].TotalAmount}`);
