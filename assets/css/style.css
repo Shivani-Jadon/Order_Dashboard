@@ -1,0 +1,32 @@
+.container-fluid{
+    padding: 0 !important;
+}
+
+/* styling sections */
+body .dashboard-section{
+    padding : 4%;
+}
+
+body .dashboard-section:nth-child(2n){
+    background-color: aliceblue;
+}
+
+body .dashboard-section:nth-child(2n+1){
+    background-color: darkgray;
+}
+
+/* styling cards in row 1 */
+.card{
+    margin: 20px auto;
+}
+
+.card img{
+    height: 300px;
+}
+
+/* styling chart */
+#mychart{
+    max-height: 90vh;
+    max-width: 800px;
+    margin: auto;
+}

@@ -10,10 +10,9 @@
             const d1 = Number(parts[2] + parts[1] + parts[0]);
             parts = b.OrderDate.split('/');
             const d2 = Number(parts[2] + parts[1] + parts[0]);
-            console.log(d1 , d2);
             return d1 - d2;
         });
-        console.log("Sorted Array ", dummyData);
+        
         for (const iterator of dummyData) {
                 data.push({y:iterator.TotalAmount})
                 labels.push(iterator.OrderDate);
