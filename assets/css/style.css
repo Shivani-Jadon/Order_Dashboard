@@ -7,12 +7,8 @@ body .dashboard-section{
     padding : 4%;
 }
 
-body .dashboard-section:nth-child(2n){
-    background-color: aliceblue;
-}
-
 body .dashboard-section:nth-child(2n+1){
-    background-color: darkgray;
+    background-color: lightgray;
 }
 
 /* styling cards in row 1 */
@@ -22,6 +18,10 @@ body .dashboard-section:nth-child(2n+1){
 
 .card img{
     height: 300px;
+}
+
+.card span{
+    color: teal;
 }
 
 /* styling chart */

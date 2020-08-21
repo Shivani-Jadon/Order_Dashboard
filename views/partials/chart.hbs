@@ -25,20 +25,26 @@
                 datasets: [{
                     label: 'Order Amount',
                     data: data,
-                    backgroundColor: [
-                        '#8bc34a9e',
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                    ],
-                    borderWidth: 1
+                    backgroundColor: '#8bc34a9e',
+                    borderColor: 'midnightblue',
+                    pointBackgroundColor : 'midnightblue',
+                    borderWidth: 1,
+                    pointRadius: 5,
+                    steppedLine : true
                 }]
             },
             options: {
                 scales: {
                     yAxes: [{
-                        stacked: true
+                        stacked: true,
+                        
                     }]
+                },
+                title: {
+                    display: true,
+                    text: 'Trends for Order Amount',
+                    fontSize: 30,
+                    padding: 20
                 }
             }
         });

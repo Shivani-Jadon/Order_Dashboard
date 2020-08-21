@@ -1,43 +1,35 @@
 
-<div class="row">
+<div class="row row-cols-1 row-cols-md-2">
     {{!-- Tile1-  Today’s total  order’s count , Current week total order’s count. --}}
-  <div class="col-sm-6">
+  <div class="col-sm-3">
     <div class="card">
       <img src="/images/card7.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Today’s total  order’s count - {}</h5>
-        <h5 class="card-title">Current week total order’s count - {}</h5>
-      </div>
+      <li class="list-group-item"><h5 class="card-title">Today’s Total  Order Count - <span id="today-order-count"></span></h5></li>
+      <li class="list-group-item"><h5 class="card-title">Week's Total Order Count - <span id="week-order-count"></span></h5></li>
     </div>
   </div>
   {{!-- Tile2- Today’s total  Order’s amount, Current week total order’s amount. --}}
-  <div class="col-sm-6">
+  <div class="col-sm-3">
     <div class="card">
       <img src="/images/card5.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Tile2- Today’s total  Order’s amount : {}</h5>
-        <h5 class="card-title">Current week total order’s amount : {}</h5>
-      </div>
+      <li class="list-group-item"><h5 class="card-title">Today’s Total  Order Amount - Rs.<span id="today-order-amount"></span></h5></li>
+      <li class="list-group-item"><h5 class="card-title">Current Week Total Order Amount - Rs.<span id="week-order-amount"></span></h5></li>       
     </div>
   </div>
   {{!-- Tile3- Current month total order’s count, Last month total order’s count. --}}
-  <div class="col-sm-6">
+  <div class="col-sm-3">
     <div class="card">
       <img src="/images/card6.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Current month total order’s count : {}</h5>
-        <h5 class="card-title">Last month total order’s count : {}</h5>
-      </div>
+        <li class="list-group-item"><h5 class="card-title">Current Month Total Order Count : <span id="month-oc"></span></h5></li>
+        <li class="list-group-item"><h5 class="card-title">Last Month Total Order Count : <span id="prev-month-oc"></span></h5></li>        
     </div>
   </div>
   {{!-- Tile4- Current month total order’s amount, Last month total order’s amount. --}}
-  <div class="col-sm-6">
+  <div class="col-sm-3">
     <div class="card">
       <img src="/images/card8.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Current month total order’s amount : {}</h5>
-        <h5 class="card-title">Last month total order’s amount : {}</h5>
-      </div>
+      <li class="list-group-item"><h5 class="card-title">Current Month Total Order Amount - Rs.<span id="month-oa"></span></h5></li>
+      <li class="list-group-item"><h5 class="card-title">Last Month Total Order Amount - Rs.<span id="prev-month-oa"></span></h5></li>
     </div>
   </div>
 </div>

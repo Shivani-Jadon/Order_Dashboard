@@ -226,7 +226,7 @@ const dataFile = [
         "OrderNo" : "2050",
         "OrderDate" : "24/06/2020",
         "OrderStatus" : "Confirm",
-        "TotalQty" : 44,
+        "TotalQty" : 14,
         "TotalAmount" : 23024,
         "City" : "Orlando"
     },
@@ -238,6 +238,15 @@ const dataFile = [
         "TotalQty" : 44,
         "TotalAmount" : 23024,
         "City" : "Orlando"
+    },
+    {
+        "UserName" : "Shirin Kuwait",
+        "OrderNo" : "2347",
+        "OrderDate" : "20/08/2020",
+        "OrderStatus" : "Confirm",
+        "TotalQty" : 23,
+        "TotalAmount" : 23024,
+        "City" : "Delhi"
     }
 ]
 
