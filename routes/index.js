@@ -11,8 +11,7 @@ router.get('/', (req, res) => {
     for(let iterator of dummyData){
         total_Product_count += iterator.TotalQty;
     }
-    console.log("TPC : ", total_Product_count);
-
+    
     res.render('home',{
         data : dummyData,
         total_ProductCount : total_Product_count

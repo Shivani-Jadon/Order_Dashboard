@@ -9,7 +9,7 @@
     const dd = todaydate.getDate();
     const mm = todaydate.getMonth() + 1;
     const week = todaydate.getWeek();
-    console.log("week",week);
+    // console.log("week",week);
     const today = (dd>10 ? dd : '0'+dd) + '/' + (mm>10 ? mm : '0'+mm) + '/' + todaydate.getFullYear();
     
     let today_OrderCount = 0;
@@ -53,10 +53,10 @@
         }
     }
 
-    console.log("Total order count : ",today_OrderCount, week_OrderCount);
-    console.log("Total order amount : ",today_OrderAmount, week_OrderAmount);
-    console.log("Month : ", month_OrderAmount, month_OrderCount);
-    console.log("Prev_month : ", prev_monthAmount, prev_monthCount);
+    // console.log("Total order count : ",today_OrderCount, week_OrderCount);
+    // console.log("Total order amount : ",today_OrderAmount, week_OrderAmount);
+    // console.log("Month : ", month_OrderAmount, month_OrderCount);
+    // console.log("Prev_month : ", prev_monthAmount, prev_monthCount);
 
 
     $('#today-order-count').text(`${today_OrderCount}`);

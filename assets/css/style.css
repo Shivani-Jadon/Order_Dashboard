@@ -2,9 +2,20 @@
     padding: 0 !important;
 }
 
+/* styling  */
+header{
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+}
+
 /* styling sections */
 body .dashboard-section{
     padding : 4%;
+}
+
+body .dashboard-section:first-child{
+    padding-top : 70px;
 }
 
 body .dashboard-section:nth-child(2n+1){
